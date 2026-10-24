@@ -1,35 +1,38 @@
 body {
-        background-color: #cfc6b1a4;
+    background-color: #cfc6b1a4;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .logo {
 
-font-size: 38px;
-border-radius: 50%;
-padding: 15px 8px;
-color: #0a0a0a;
+    font-size: 38px;
+    border-radius: 50%;
+    padding: 15px 8px;
+    color: #0a0a0a;
 }
 
 .navlink {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  font-size: 29px;
-  margin-left:;
-  font-family: 'Times New Roman', Times, serif;
- 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 29px;
+    margin-left: ;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
-.navlink2{
+.navlink2 {
     text-decoration: none;
-    background-color:#cfc6b1a4;
+    background-color: #cfc6b1a4;
     border-radius: 30px;
-    font-size:17px;
-    padding: 10px 10px ;
+    font-size: 17px;
+    padding: 10px 10px;
 
 }
+
 .heading {
     font-size: 60px;
     font-family: "DM Sans", sans-serif;
@@ -37,33 +40,35 @@ color: #0a0a0a;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-justify-content:space-between;
-padding: 20px 40px;
-background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20PX 40PX;
+    background-color: #f6f7fb;
 }
 
-.heading2{
+.heading2 {
     font-size: 23px;
-     font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
-.button1{
-     text-decoration: none;
+
+.button1 {
+    text-decoration: none;
     background-color: #eef0e8;
     border-radius: 30px;
-    font-size:19px;
-    padding: 14px 14px ;
+    font-size: 19px;
+    padding: 14px 14px;
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 20px;
 }
-.button2{
-     text-decoration: none;
+
+.button2 {
+    text-decoration: none;
     background-color: rgb(238, 240, 230);
     border-radius: 30px;
-    font-size:19px;
-    padding: 14px 14px ;
+    font-size: 19px;
+    padding: 14px 14px;
     display: inline-block;
 }
 
@@ -71,7 +76,7 @@ background-color: #f6f7fb;
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    border-radius:50px;
+    border-radius: 50px;
 }
 
 .hero-image img {
@@ -79,75 +84,275 @@ background-color: #f6f7fb;
     max-width: 500px;
     height: auto;
     object-fit: cover;
-     border-radius:50px;
+    border-radius: 50px;
 }
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-     border-radius:50px;
+    border-radius: 50px;
     padding: 50px;
 }
 
 .hero-text {
-    width: 50%;;
+    width: 50%;
+    ;
 }
-.span{
+
+.span {
     color: #090979;
 }
+
 nav a {
-    color:  #0f0f0e;
+    color: #0f0f0e;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 nav a:visited {
     color: #181d69;
 }
-nav a:hover {
-    color: #5a5c3eae;}
-nav a:active {
-    color: #6a5e2c95;}
-.about{
-    color: #090979;
-     font-family: "DM Sans", sans-serif;
-     margin-left: 80px;
-     font-size: 50px;
-     text-align: center;
-}
-.paragraph{
-     font-size:30px;
-     font-family: "Raleway", sans-serif;
-     
-}
-.para2{
-     font-size: 30px;
-   font-family: "Raleway", sans-serif;
-}
-.para3{
-     font-size: 30px;
-     font-family: "Raleway", sans-serif;
-}
-.different{
-    background-color: ;
 
+nav a:hover {
+    color: #5a5c3eae;
 }
+
+nav a:active {
+    color: #6a5e2c95;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .navlink {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navlink2 {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .heading2 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .navlink a {
+        font-size: 12px;
+    }
+}
+
+
+/*.............SECOND PAGE.................*/
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding: 60px 7%;
+    background-color: #fcfaf7;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+/*........ RIGHT.....*/
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-content h1 {
+    font-size: 42px;
+    color: #181d69;
+    margin: 0 0 20px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.about-description {
+    color: #777;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* Team Members */
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.team-avatars {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.team-avatars img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -8px;
+    border: 2px solid #fcfaf7;
+}
+
+.team-info p {
+    color: #555;
+    font-size: 19px;
+    margin: 0 0 0 5px;
+}
+
+.team-info strong {
+    font-size: 22px;
+    color: #171717;
+    margin-right: 5px;
+}
+
+/* About Points */
+
+.about-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+
+.about-points li {
+    margin-bottom: 14px;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: #171717;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        padding: 35px 6%;
+        gap: 30px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+}
+
+/* Small Mobile Screens */
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 25px 5%;
+    }
+
+    .about-image img {
+        height: 230px;
+        border-radius: 18px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .team-info {
+        gap: 10px;
+    }
+
+    .team-info p {
+        font-size: 12px;
+    }
+}
+/*......THIRD PAGE........*/
 
 .selected-work {
     background-color: #cfc6b1a4;
     padding: 70px 8%;
     color: #171717;
 }
+
 .work-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 30px;
-     font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 
 }
-.span{
+
+.span {
     padding: auto;
     font-size: 70px;
 }
@@ -203,32 +408,40 @@ nav a:active {
 .work-card:hover img {
     transform: scale(1.05);
 }
+
 @media (max-width: 768px) {
     .selected-work {
         padding: 45px 5%;
     }
+
     .work-header {
         flex-direction: column;
         gap: 15px;
     }
+
     .work-header h2 {
         font-size: 30px;
     }
+
     .work-description {
         text-align: left;
     }
+
     .work-gallery {
         grid-template-columns: 1fr;
     }
+
     .work-card {
         height: 280px;
     }
 }
-.service{
+
+.service {
     color: #090979;
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
 }
+
 .services {
     padding: 65px 7%;
     background: #cfc6b1a4;
@@ -359,14 +572,14 @@ nav a:active {
 }
 
 .reviews h2 {
-    font-size:40px;
+    font-size: 40px;
     font-family: "DM Sans", sans-serif;
 }
 
 .subtitle {
     color: #53627d;
     margin-bottom: 40px;
-    font-size:25px;
+    font-size: 25px;
 }
 
 .review-container {
@@ -418,7 +631,7 @@ nav a:active {
 
 .contact h2 {
     font-size: 40px;
-     font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 
 }
 
@@ -462,5 +675,3 @@ nav a:active {
         padding: 30px 18px;
     }
 }
-
-
